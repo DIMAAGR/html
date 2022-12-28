@@ -1,0 +1,47 @@
+<html>
+    <!-- HTML HEAD -->    
+    <head>
+        <title>Um pouco de CSS</title>
+        <!-- Definiremos os estilos CSS por aqui (POR ENQUANTO...) -->
+        <style>
+            /* Definimos que todos H1s receberan este estilo, H1 é um elemento*/
+            h1 {
+              /*no css utiizamos para estilizar um coponente o **sistema chave:valor** com **parametro: valor** e terminados com ; */  
+
+              /*exemplo:*/
+              color: #404040; /*A cor está em HexaDecimal */
+              font-family: Montserrat;
+              font-weight: 800;
+              text-align: center;
+            }
+            /* elementos que começam com . são classes*/
+            .fundoVermelho { 
+            background-color: #FF6961;
+            }
+
+            /* elementos que começam com # são IDs*/
+            #textoPrincipal {
+                font-size: 14px; /*px significa PiXels*/
+                font-family: roboto;
+                font-weight: 700;
+
+            }
+        </style>        
+    </head>
+    <!-- HTML BODY -->
+    <body>
+        <!-- No css você pode tanto adicionar um estilo especifico para todas as tags quanto definir um estilo para um ID especifico-->
+        <!-- nesse segundo caso você usa um ID para organizar as tags e adicionar estilos e códigos em cima daquele texto ou ação -->
+        <!-- especifica. -->
+        
+        <!-- ATENÇÃO: O ID deve ser único na pagina inteira, não se extendendo para outras páginas-->
+
+        <!-- O **class** também é um identificador muito associado com o uso de estilo para que você possa aplicar uma determinada -->
+        <!-- classe mais de uma vez na mesma página. Então, você pode aplicar em vários elementos a mesma classe, ou até usar mais -->
+        <!-- de uma classe no mesmo elemento! -->
+        <h1>CSS</h1>
+        <span id="textoPrincipal">Este é o texto principal da página estilizado com um id chamado <strong style="font-weight:900; font-size: 16px;">textoPrincipal</strong> </span><br/>
+        <span class="fundoVermelho negrito">Texto 2</span><br/><br/>
+        <span class="fundoVermelho">Texto 3</span>
+    </body>
+</html>
