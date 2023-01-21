@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none; /* Remove o circulo do lado esquerdo do item da lista*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* remove o overflow */
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+}
+
+ /* GERAL PARA o LI e o A*/
+li a {
+    display: block; /* muda a forma como é mostrado para um sólido*/
+    color: white; /* troca a cor da fonte para branca*/
+    text-align: center; /* alinha o texto no centro*/
+    padding: 14px 16px;  /* adiciona um padding de vertical; horizontal; */
+    text-decoration: none; /* remove as decorações do texto */
+  }

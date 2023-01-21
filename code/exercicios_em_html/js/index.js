@@ -8,12 +8,17 @@
 
     document.querySelectorAll('a').forEach( listOfPageLinks => {
         listOfPageLinks.onclick = function(event) {
-        event.preventDefault() // Impede que a ação padrão ocorra
-        const content = document.getElementById('conteudo')  // Vai obter o local onde será exibido os dados da página escolhida
-        fetch(listOfPageLinks.href)
-            .then(response => response.text())
-            .then(html => content.innerHTML = html) // Vai Cuspir no local o html da página escolhida
+      
+            event.preventDefault() // Impede que a ação padrão ocorra
+            const content = document.getElementById('conteudo')  // Vai obter o local onde será exibido os dados da página escolhida
+           
+            if(event.currentTarget.target.toLowerCase() != '_blank') {
+                fetch(listOfPageLinks.href).then(async response =>  {
+                    content.innerHTML =  await response.text();
+                });
+            } else {
+                content.innerHTML = '';
+            }
         }
     })
-
 }

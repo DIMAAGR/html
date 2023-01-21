@@ -1,7 +1,8 @@
 header {
     background-color: #E8E8E8;
     margin: 0px;
-    padding: 16px;
+    padding-top: 16px;
+    
 }
 
 h1 {
@@ -19,3 +20,4 @@ h6 {
     color: #404040;
     font-size: 12px;
 }
+
